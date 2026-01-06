@@ -95,7 +95,7 @@ Inspired by [Codex](https://github.com/openai/codex), the workflow is:
 
 1. Create a temporary index via `GIT_INDEX_FILE`.
 2. Run `git read-tree HEAD` and `git add --all` to prepare the tree.
-3. Write a tree object and an orphaned commit with `git commit-tree`.
+3. Write a tree object(`git write-tree`) and an orphaned commit with `git commit-tree`.
 4. Persist metadata (repository, message, timestamps, untracked paths) in local storage.
 5. Restore with `git restore --worktree --staged` and remove any post-snapshot untracked files.
 
